@@ -1,0 +1,160 @@
+/* reset default styles of elements */
+
+* *::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    font-family: var(--manrope);
+}
+
+.main {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    max-width: 21.875rem;
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+    margin: 5rem 0;
+}
+
+.card__img {
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.card__body {
+    padding: 0 2rem;
+}
+
+.card__title {
+    font-size: 1rem;
+    font-weight: var(--bold);
+    line-height: 1.6rem;
+    margin-top: 2rem;
+    color: var(--very-dark-graish-blue);
+}
+
+.card__caption {
+    font-size: 0.813rem;
+    color: var(--desaturated-dark-blue);
+    line-height: 1.3rem;
+    font-weight: var(--medium);
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 1.5rem 0;
+    position: relative;
+}
+
+.card__user {
+    display: flex;
+}
+
+.card__user img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+}
+
+.card__user-id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.card__user-id h2 {
+    font-size: 0.813rem;
+    color: var(--very-dark-graish-blue);
+    margin: 0 0 0.3rem 0;
+}
+
+.card__user-id p {
+    font-size: 0.813rem;
+    color: var(--grayish-blue);
+    margin: 0;
+}
+
+.card__share {
+    cursor: pointer;
+    background-color: var(--light-grayish-blue);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+/* create section that we need at active state */
+
+.card__social {
+    position: absolute;
+    background-color: var(--very-dark-graish-blue);
+    left: -2rem;
+    top: 0;
+    bottom: -1.5rem;
+    right: -2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: none;
+}
+
+.card__links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card__link {
+    margin-right: 1.2rem;
+}
+
+.card__link:first-child a {
+    font-size: 1rem;
+    color: var(--grayish-blue);
+    letter-spacing: 0.3rem;
+}
+
+.card__link a {
+    text-decoration: none;
+    color: white;
+}
+
+.card__share:active + .card__social {
+    display: block;
+}
+
+.card__share:active {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1rem;
+    background-color: var(--desaturated-dark-blue);
+}
+
+.card__share:active path {
+    fill: white;
+}
+
+
+

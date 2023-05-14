@@ -1,0 +1,56 @@
+@media only screen and (min-width: 62rem) {
+    .main {
+        max-width: 48rem;
+        padding: 5.5rem;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card__img {
+        width: 40%;
+        border-radius: 0.6rem 0 0 0.6rem;
+    }
+
+    .card__body {
+        padding: 0 2.5rem;
+    }
+
+    .card__title {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .card__info {
+        margin-bottom: 2rem;
+    }
+
+    /* style for active state */
+    .card__social {
+        left: 15rem;
+        top: -5.5rem;
+        bottom: 3.5rem;
+        right: -7rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 55% 85%, 50% 100%, 45% 85%, 0% 85%);
+        border-radius: 0.5rem;
+    }
+
+    .card__share:active+.card__social {
+        display: block;
+    }
+
+    .card__share:active {
+        background-color: var(--very-dark-graish-blue);
+        position: relative;
+        top: 0;
+    }
+
+    .card__share:active path {
+        fill: white;
+    }
+
+    .card__link:first-child a {
+        font-size: 0.9rem;
+    }
+}

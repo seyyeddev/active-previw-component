@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- font awesome link-->
+  <script src="https://kit.fontawesome.com/01d39b06dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="main">
+
+    <div class="card">
+
+      <!-- card's image -->
+      <img src="./images/drawers.jpg" alt="an image of desk" class="card__img">
+
+      <div class="card__body">
+
+        <!-- card' explanation -->
+        <h1 class="card__title">
+          Shift the overall look and feel by adding this
+          wonderful touches to furniture in your home
+        </h1>
+        <p class="card__caption">
+          Ever been in a room and felt like something was missing?
+          Perhaps it felt slightly bare and uninviting. I'v got some
+          simple tips to help you make any room feel complete.
+        </p>
+
+        <!-- card's user information -->
+        <div class="card__info">
+          <div class="card__user">
+            <img src="./images/avatar-michelle.jpg" alt="an image of a person">
+            <div class="card__user-id">
+              <h2>Michelle Appleton</h2>
+              <p>28 jun 2020</p>
+            </div>
+          </div>
+
+          <!-- card's share button that dispaly social media link when element is active -->
+          <div class="card__share">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- social media links that show when button is active -->
+          <div class="card__social">
+
+            <ul class="card__links">
+              <li class="card__link">
+                <a href="#">SHARE</a>
+              </li>
+
+              <li class="card__link">
+                <a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+              </li>
+
+              <li class="card__link">
+                <a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+              </li>
+
+              <li class="card__link">
+                <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
