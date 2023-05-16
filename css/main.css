@@ -140,7 +140,7 @@ body {
     color: white;
 }
 
-.card__share:active + .card__social {
+/* .card__share:active + .card__social {
     display: block;
 }
 
@@ -154,7 +154,22 @@ body {
 
 .card__share:active path {
     fill: white;
+} */
+
+.card__social-active {
+    display: block;
 }
 
+.card__share-active {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 1rem;
+    background-color: var(--desaturated-dark-blue);
+}
+
+.card__share-active-icon {
+    fill: white;
+}
 
 
