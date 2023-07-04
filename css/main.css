@@ -10,6 +10,18 @@
   min-width: 20rem;
   max-width: 20rem;
   box-shadow: 0 1rem 2rem 0 hsla(217, 19%, 35%, 0.1);
+  margin: 4rem 0;
+}
+@media only screen and (min-width: 64rem) {
+  .wrapper {
+    max-width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .card {
+    display: flex;
+  }
 }
 
 .card__image-container {
@@ -22,10 +34,19 @@
   object-position: top;
   border-radius: 0.5rem 0.5rem 0 0;
 }
+@media only screen and (min-width: 64rem) {
+  .card__image-container img {
+    width: 16rem;
+    height: auto;
+    object-position: left;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
 
 .card__body {
   background-color: white;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .card__body h1 {
   font-family: "manrope-bold";
@@ -38,14 +59,18 @@
   font-size: 0.8125rem;
   color: hsl(214, 17%, 51%);
 }
+@media only screen and (min-width: 64rem) {
+  .card__body {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
 
 .card__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 0 2rem 1rem 2rem;
-  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .card__info {
@@ -73,7 +98,7 @@
 .card__date {
   font-family: "manrope-medium";
   font-size: 0.8125rem;
-  color: hsl(214, 17%, 51%);
+  color: hsl(212, 23%, 69%);
 }
 
 .card__button {

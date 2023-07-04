@@ -2,6 +2,19 @@
     min-width: 20rem;
     max-width: 20rem;
     box-shadow: 0 1rem 2rem 0 $shadowColor;
+    margin: 4rem 0;
+
+    //responsive
+    @include desktop() {
+        max-width: 40rem;
+    }
+}
+
+.card {
+    //responsive
+    @include desktop() {
+        display: flex;
+    }
 }
 
 //image
@@ -14,13 +27,22 @@
         object-fit: cover;
         object-position: top;
         border-radius: 0.5rem 0.5rem 0 0;
+
+        //responsive
+        @include desktop() {
+            width: 16rem;
+            height: auto;
+            object-position: left;
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
     }
 }
 
 //body
 .card__body {
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
 
     h1 {
         font-family: $ff-mainBold;
@@ -34,6 +56,11 @@
         font-size: 0.8125rem;
         color: $desaturatedDarkBlue;
     }
+
+    //responsive
+    @include desktop() {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
 }
 
 //footer
@@ -42,8 +69,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 0 2rem 1rem 2rem;
-    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .card__info {
@@ -66,14 +92,14 @@
 
 .card__author {
     font-family: $ff-mainBold;
-    font-size:  0.8125rem;
+    font-size: 0.8125rem;
     color: $veryDarkGrayishBlue;
 }
 
 .card__date {
     font-family: $ff-mainMedium;
-    font-size:  0.8125rem;
-    color: $desaturatedDarkBlue;
+    font-size: 0.8125rem;
+    color: $grayishBlue;
 }
 
 .card__button {
