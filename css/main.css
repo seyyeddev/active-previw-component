@@ -6,12 +6,105 @@
   font-family: "manrope-bold";
   src: url(../fonts/Manrope-Bold.ttf) format("truetype");
 }
+.wrapper {
+  min-width: 20rem;
+  max-width: 20rem;
+  box-shadow: 0 1rem 2rem 0 hsla(217, 19%, 35%, 0.1);
+}
+
+.card__image-container {
+  display: flex;
+}
+.card__image-container img {
+  width: 20rem;
+  height: 13.125rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__body {
+  background-color: white;
+  padding: 2rem;
+}
+.card__body h1 {
+  font-family: "manrope-bold";
+  font-size: 1rem;
+  color: hsl(217, 19%, 35%);
+  margin: 0 0 1rem 0;
+}
+.card__body p {
+  font-family: "manrope-medium";
+  font-size: 0.8125rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 2rem 1rem 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+.card__info img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.card__info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.card__author {
+  font-family: "manrope-bold";
+  font-size: 0.8125rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.card__date {
+  font-family: "manrope-medium";
+  font-size: 0.8125rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.card__button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card__button svg {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=main.css.map */
