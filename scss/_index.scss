@@ -11,6 +11,7 @@
 }
 
 .card {
+
     //responsive
     @include desktop() {
         display: flex;
@@ -130,49 +131,60 @@
     }
 }
 
- .card__overlay {
-     position: absolute;
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     top: -1rem;
-     left: -2rem;
-     bottom: -1rem;
-     right: -2rem;
-     background-color: $veryDarkGrayishBlue;
-     border-radius: 0 0 0.5rem 0.5rem;
-     overflow: hidden;
-     animation: enter 1s ease;
-     display: none;
+.card__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: -1rem;
+    left: -2rem;
+    bottom: -1rem;
+    right: -2rem;
+    background-color: $veryDarkGrayishBlue;
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+    animation: enter 1s ease;
+    display: none;
 
-     ul {
+    ul {
         list-style: none;
         display: flex;
         margin-left: 2rem;
-     }
- }
+    }
 
- .card__overlay--active {
+    //responsive
+    @include desktop() {
+        top: -5rem;
+        left: 11.5rem;
+        bottom: 4rem;
+        right: -6rem;
+        border-radius: 0.5rem;
+        animation: enterDesktop 1s ease;
+        overflow: visible;
+    }
+}
+
+.card__overlay--active {
     display: flex;
- }
+}
 
- .card__social {
+.card__social {
     margin-right: 0.5rem;
     width: 2rem;
     height: 2rem;
     padding-top: 0.4rem;
- }
+}
 
- .card__social--text {
+.card__social--text {
     font-family: $ff-mainMedium;
     font-size: 0.8125rem;
     color: $grayishBlue;
     letter-spacing: 0.3rem;
     width: auto;
     margin-right: 1rem;
- }
+}
 
- .card__link {
+.card__link {
     display: block;
     width: 100%;
     height: 100%;
@@ -181,4 +193,16 @@
         width: 100%;
         height: 100%;
     }
- }
+}
+
+.card__arrow {
+    @include desktop() {
+        width: 1rem;
+        height: 1rem;
+        background-color: $veryDarkGrayishBlue;
+        position: absolute;
+        bottom: -0.25rem;
+        left: 48%;
+        transform: rotate(45deg);
+    }
+}
